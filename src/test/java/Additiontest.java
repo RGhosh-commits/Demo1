@@ -8,7 +8,7 @@ public class Additiontest {
 	public void test() {
 		
 		int result = Addittion.add(18,10);
-		assertEquals(10,result);
+		assertEquals(28,result);
 		
 	}
 
