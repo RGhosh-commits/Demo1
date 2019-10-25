@@ -15,7 +15,7 @@ sh 'mvn clean package'
     stage('SonarQube Analysis'){
             steps{
                withSonarQubeEnv('sonarqube'){
-                     sh '${sonarscanner}/bin/sonar-scanner -Dproject.settings=./sonar-project.properties'
+                     sh '${sonarscanner}/bin/sonar-scanner -Dproject.settings=./Sonar.properties'
                 }
             }
         }
