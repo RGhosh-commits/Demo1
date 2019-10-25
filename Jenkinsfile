@@ -1,5 +1,5 @@
-pipeline{
-agent any{
+pipeline {
+agent any {
 tools{
 maven "Maven"
 }
@@ -37,4 +37,4 @@ sh 'mvn clean package'
   
 }
 }
-
+}
