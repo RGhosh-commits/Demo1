@@ -7,8 +7,8 @@ public class Additiontest {
 	@Test
 	public void test() {
 		
-		int result = Addittion.add(10,10);
-		assertEquals(20,result);
+		int result = Addittion.add(18,10);
+		assertEquals(10,result);
 		
 	}
 
