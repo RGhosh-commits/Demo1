@@ -19,13 +19,13 @@ sh 'mvn clean package'
                 }
             }
         }
-   stage("Quality Gate") {
+  /* stage("Quality Gate") {
             steps {
               timeout(time: 7, unit: 'MINUTES') {
                 waitForQualityGate abortPipeline: true
               }
             }
-        }
+        }*/
   stage('Pushing to Nexus'){
             steps{
                withCredentials([usernamePassword(credentialsId: 'nexus-credentialss', passwordVariable: 'password', usernameVariable: 'username'),string(credentialsId: 'NEXUS_URL', variable: 'nexus_url')]){
